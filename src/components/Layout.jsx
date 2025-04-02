@@ -7,12 +7,12 @@ const Layout = () => {
       <nav className="bg-gray-250 text-black font-bold p-4">
         <ul className="flex gap-4 justify-end mb-1">
           <li>
-            <Link to="/" className="hover:text-yellow-400">
+            <Link to="" className="hover:text-yellow-400">
               Home
             </Link>
           </li>
           <li>
-            <Link to="/about" className="hover:text-yellow-400">
+            <Link to="" className="hover:text-yellow-400">
               Owner
             </Link>
           </li>
@@ -20,7 +20,6 @@ const Layout = () => {
       </nav>
       <hr />
       <div className="p-6 max-w-4xl mx-auto w-full">
-        <Outlet />
       </div>
     </div>
   );

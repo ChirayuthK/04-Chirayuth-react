@@ -13,7 +13,7 @@ const Owner = () => {
         That was the last picture of my work. Back then, I never thought that
         one day I would have to take on many different roles. Even though it
         wasn't the job I loved, it provided the most stability in life. Life is
-        like an airplane—there are ups and downs, turbulence along the way. Now,
+        like an airplane—there are takes-off and landings, turbulence along the way. Now,
         five years have passed. I've done things I never imagined, traveled to
         many places, but nothing has ever been as clear as it is today. From
         this moment on, there's no turning back. I must transform myself into a

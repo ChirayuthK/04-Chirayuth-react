@@ -4,7 +4,7 @@ const Owner = () => {
       <h1 className="text-2xl font-bold">Tong - Group F - 04 </h1>
 
       <img
-        src="/public/123456.jpg"
+        src="/123456.jpg"
         alt="My Image"
         className="w-80 h-100 border border-gray-400 flex items-center justify-center my-8"
       />

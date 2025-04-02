@@ -10,21 +10,24 @@ const Home = () => {
 
   return (
     <div className="text-center">
-      <h1 className="text-3xl font-bold mb-4">Welcome to Our App</h1>
+      <h1 className="text-4xl font-bold mb-4">Generation Thailand</h1>
+      <h1 className="text-4xl font-bold mb-4">React - Assessment</h1>
+      <div className="flex mt-12 gap-20 justify-center">
       <button
         onClick={handleNavigate}
-        className="px-4 py-2 bg-teal-500 text-white rounded-md hover:bg-teal-700 transition"
+        className="px-4 py-2 bg-white text-black font-bold rounded-md shadow-xl hover:bg-amber-200 transition cursor-pointer"
       >
-        Go to About
+        User Home Sector
       </button>
-      <br />
-      <br />
-      <Link
-        to="/contact"
-        className="text-teal-600 underline hover:text-teal-800"
+      <button
+        onClick={handleNavigate}
+        className="px-4 py-2 bg-white text-black font-bold rounded-md shadow-xl hover:bg-amber-200 transition cursor-pointer"
       >
-        Go to Contact
-      </Link>
+        Admin Home Sector
+      </button>
+      </div>
+      <br />
+      <br />
     </div>
   );
 };

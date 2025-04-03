@@ -41,8 +41,8 @@ const PostUser = () => {
         setResponse(res.data);
 
         setUsers((prevUsers) => {
-          const newUsers = prevUsers.slice(); // Copy array แบบปกติ
-          newUsers.push(res.data); // เพิ่มข้อมูลใหม่
+          const newUsers = prevUsers.slice();
+          newUsers.push(res.data);
           return newUsers;
         });
       } catch (err) {

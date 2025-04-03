@@ -40,7 +40,11 @@ const PostUser = () => {
         );
         setResponse(res.data);
 
-        setUsers((prevUsers) => prevUsers.concat(res.data));
+        setUsers((prevUsers) => {
+          const newUsers = prevUsers.slice(); // Copy array แบบปกติ
+          newUsers.push(res.data); // เพิ่มข้อมูลใหม่
+          return newUsers;
+        });
       } catch (err) {
         console.error(err);
         setError("❌ Failed to create user. Please try again.");
@@ -58,8 +62,15 @@ const PostUser = () => {
   };
 
   const handleDelete = (index) => {
-    const updatedUsers = users.filter((_, i) => i !== index);
-    setUsers(updatedUsers);
+    setUsers((prevUsers) => {
+      const newUsers = [];
+      for (let i = 0; i < prevUsers.length; i++) {
+        if (i !== index) {
+          newUsers.push(prevUsers[i]);
+        }
+      }
+      return newUsers;
+    });
   };
 
   return (
@@ -110,7 +121,7 @@ const PostUser = () => {
         </div>
       )}
 
-      <table className= "border-gray-400 w-full mt-2">
+      <table className="border-gray-400 w-full mt-2">
         <thead>
           <tr className="bg-gray-200">
             <th className="border px-4 py-2">Name</th>
